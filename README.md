@@ -7,6 +7,9 @@
 \_____/\__,_|_|  |_.__/ \__,_|\___\__,_|_| |_|\___|
 VBA/Powershell/C/++/# Shellcode loader framework +
 ```
+![Python](https://img.shields.io/badge/python-3.11-blue.svg)
+![Release](https://img.shields.io/badge/release-1.0-yellow.svg)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 A barbican (barbacane [old french], bashoura [arabic]) is a fortified gateway situated over a gate or bridge, which was used for defensive purposes. An ominous doorway to a world of dreams and occult myths.
 
