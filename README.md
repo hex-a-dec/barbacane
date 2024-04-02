@@ -56,7 +56,6 @@ As a framework, Barbacane offers the following generation capabilities:
 
 - On demand, a **Python3 web server may be initialized to be used as a staging server**. it includes preformatted living-off-the-land commands to download the craddle
 
-----
 ## [+] Installation
 
 ### Setup:
@@ -73,7 +72,6 @@ source barbacane-venv/bin/activate
 pip3 install colorama
 ```
 
----
 ## [+] Usage
 
 >[!WARNING]
@@ -138,7 +136,6 @@ Other examples you might want to know:
 
 All templates used by the framework are available in the ``/templates`` folder. The generated payloads are availlable in ``/output`` folder
 
----
 ## [+] Credits
 
 A special thanks goes to:
