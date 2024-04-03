@@ -139,7 +139,7 @@ Other examples you might want to know:
 ## [+] Credits
 
 A special thanks goes to:
-- [vanmieghem.io - A blueprint for evading industry leading endpoint protection in 2022](https://vanmieghem.io/blueprint-for-evading-edr-in-2022/), still a masterclass in 2023. i learnt so much reading this blog article
-- [Sektor7 - RED TEAM Operator: Malware Development Essentials Course](https://institute.sektor7.net/red-team-operator-malware-development-essentials) A great but not-free resource to jump into the development of shellcode.
+- [vanmieghem.io - A blueprint for evading industry leading endpoint protection in 2022](https://vanmieghem.io/blueprint-for-evading-edr-in-2022/), still a masterclass in 2023. I learnt so much reading this blog article
+- [Sektor7 - RED TEAM Operator: Malware Development Essentials Course](https://institute.sektor7.net/red-team-operator-malware-development-essentials), a great but not-free resource to jump into the development of shellcode.
 - [Offsec - OSEP course](https://www.offsec.com/courses/pen-300/), well Barbacane is all about this course, right ?
 - I must admit ChatGPT3.5 extensively helped me to write some cryptographic functions in Python. Thank you CG ;)
