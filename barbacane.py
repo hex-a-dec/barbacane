@@ -115,7 +115,7 @@ def xor_encrypt_c(binary_file,key):
     with open(binary_file, 'rb') as f:
         binary_data = f.read()
     encrypted_data = xor_cypher(binary_data, key.encode())
-    output = ', '.join(f'0x{byte:02x}' for byte in encrypted_data)
+    output = "".join(f'\\x{byte:02x}' for byte in encrypted_data)
     xor_pld = f'unsigned char payload[] = {{ {output} }};'
     return xor_pld
 
